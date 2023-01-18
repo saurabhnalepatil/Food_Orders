@@ -1,0 +1,34 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>
+    <li *ngFor="let food of foods">
+        <a routerLink="/food/{{food.id}}">
+            <img src="{{food.imageUrl}}" alt="food images">
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+                </div>
+                <span class="favorite {{food.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></span>
+                <div>
+                    <ngb-rating class="star {{food.star?'':'not'}}" [rate]="food.star" [readonly]="true" [max]="5"
+                        size="24px"></ngb-rating>
+                </div>
+                <div clas="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of food.origins">
+                            {{origin}}
+                        </span>
+                    </div>
+                    <div class="price">
+                        {{food.price | currency:'INR'}}
+                    </div>
+                    <div class="cook-time">
+                        <span>🕓</span>
+                        {{food.cookTime}}
+                    </div>
+                </div>
+
+            </div>
+        </a>
+    </li>
+</ul>

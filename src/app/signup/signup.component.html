@@ -1,0 +1,67 @@
+<h1>Hello Saurabh</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>signup Testy Codeiz</h1>
+                    <hr>
+                    <form #ClintSignUp="ngForm" (bgSubmit)="signUp(ClintSignUp.value)">
+                        <div class="mb-3">
+                            <label  class="form-label">Name</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignUp</button>
+                    </form>
+                    <a routerLink="/signup">New User ? click to signup!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login Testy Codeiz</h1>
+                    <h6>Welcome Foodies</h6>
+                    <hr>
+                    <form #ClintSignUp="ngForm" (bgSubmit)="signUp(ClintSignUp.value)">
+                        <div class="mb-3">
+                            <label formControlName="name"  class="form-label">Name</label>
+                            <input type="email" ngModel class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label formControlName="email" class="form-label">Email address</label>
+                            <input type="email" ngModel class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label formControlName="mobile" class="form-label">Mobile Number</label>
+                            <input type="email" ngModel class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" ngModel class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sumbit</button>
+                    </form>
+                    <a routerLink="/signup">New User ? click to signup!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
