@@ -1,45 +1,61 @@
-header{
-    background-color: rgba(180, 216, 238, 0.708);
-    /* padding: 0;  */
-    border-bottom: 2px solid rgba(96, 184, 239, 0.995);
-    padding: .3rem .5rem;
-    margin: .2rem .15rem; 
-    border-radius: 10rem;
-    display: flex;
-    height: 3rem;
-}
-a{
+.navbar-item {
     color: #e72929;
-    font-size: large;
-    margin: 2rem;
-    padding: .2rem .5rem;
+    padding-inline: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
+}
 
+.logo-img {
+    height: 50px;
+    width: 50px;
+    background-image: cover;
+    border-radius: 50%;
 }
-a:hover{
-    background-color:rgba(47, 158, 227, 0.708);
-    padding: .2rem .5rem;
-    /* margin: .2rem .15rem; */
-    border-radius: 10rem;
-    color: white;
-    border-bottom: 2px solid rgba(2, 158, 255, 0.995);
-}
-.container {
-    padding: 20px;
-    margin:  auto;
+
+.logo-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-a.logo {
-    font-weight: bold;
-    padding: 1em;
+.company-name {
+    margin-left: 10px;
+    font-family: 'Playball';
+    font-size: 32px;
+
 }
-nav ul{
-    list-style-type: none;
-    margin:0;
+
+.sub-title {
+    font-size: 16px;
+    font-family: 'Playball';
+    margin: 40px 0px 0px -44px
 }
-nav ul li a{
-    padding: 1rem;
-    font-weight:bold;
-    display: inline-block;
+
+.navbar a {
+    color: #626262;
+
+
+}
+
+.horizontal-nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #e72929;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+    color: #626262;;
+}
+
+.horizontal-nav li a:hover::before {
+    width: calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-nav li a:hover {
+    color: #e72929;
 }

@@ -8,12 +8,12 @@
                 <div class="name">
                     {{food.name}}
                 </div>
-                <span class="favorite {{food.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></span>
+                <span class="favorite {{food.favorite ? '' : 'not'}}"><i class="fa-solid fa-heart"></i></span>
                 <div>
-                    <ngb-rating class="star {{food.star?'':'not'}}" [rate]="food.star" [readonly]="true" [max]="5"
+                    <ngb-rating class="star {{food.star ? '' : 'not'}}" [rate]="food.star" [readonly]="true" [max]="5"
                         size="24px"></ngb-rating>
                 </div>
-                <div clas="product-item-footer">
+                <div class="product-item-footer">
                     <div class="origins">
                         <span *ngFor="let origin of food.origins">
                             {{origin}}
@@ -27,7 +27,6 @@
                         {{food.cookTime}}
                     </div>
                 </div>
-
             </div>
         </a>
     </li>

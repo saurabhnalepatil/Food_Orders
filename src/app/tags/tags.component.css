@@ -3,16 +3,15 @@ div{
     flex-wrap: wrap;
 }
 div a{
-    background-color:rgba(180, 216, 238, 0.708);
-    border-bottom: 2px solid rgba(96, 184, 239, 0.995);
+    background-color:#f1f1f1;
     padding: .3rem 1rem;
     margin: .2rem .15rem;
     border-radius: 10rem;
-    color: #e72929;
+    color: #626262;
     font-weight: 600;
 }
 div a:hover{
     color:black;
-    background-color:rgba(47, 158, 227, 0.708);
+    background-color: #f1f1f1;
     cursor: pointer;
 }
