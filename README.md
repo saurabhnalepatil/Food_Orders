@@ -2,6 +2,8 @@
 
 Welcome to the Food Order Portal! This web application provides a convenient platform for users to browse through a variety of delicious dishes, place orders, and enjoy hassle-free delivery services.
 
+# View live preview [here](food-orders-psi.vercel.app).
+
 ## Features
 
 - **User Authentication**: Secure user authentication system allowing users to sign up, log in, and manage their profiles.
