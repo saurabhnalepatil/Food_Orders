@@ -2,7 +2,10 @@
 
 Welcome to the Food Order Portal! This web application provides a convenient platform for users to browse through a variety of delicious dishes, place orders, and enjoy hassle-free delivery services.
 
-# View live preview [here](food-orders-psi.vercel.app).
+# **Demo 🎥**
+![food-order](https://github.com/saurabhnalepatil/Food_Orders/assets/95145125/8a2759a5-1f30-4a11-87cb-6a80e6001cdf)
+
+# View live preview [here](https://food-orders-psi.vercel.app).
 
 ## Features
 
