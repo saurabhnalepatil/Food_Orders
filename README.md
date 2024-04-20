@@ -1,27 +1,32 @@
-# FoodOrder
+# Food Order Portal
+## Welcome to the Food Order Portal! This web application provides a convenient platform for users to browse through a variety of delicious dishes, place orders, and enjoy hassle-free delivery services.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+# Features
+User Authentication: Secure user authentication system allowing users to sign up, log in, and manage their profiles.
+Browse Menu: Explore a diverse menu of mouth-watering dishes categorized by cuisine, dietary preferences, and more.
+Order Placement: Effortlessly place orders with just a few clicks, customizing options such as quantity, delivery address, and preferred payment method.
+Order Tracking: Track the status of your orders in real-time, from preparation to delivery, ensuring a seamless and transparent experience.
+Promotions and Discounts: Stay updated on the latest promotions, discounts, and special offers to make the most of your dining experience.
+User Reviews and Ratings: Share your feedback and experiences with other users by leaving reviews and ratings for dishes and delivery services.
+Responsive Design: Enjoy a seamless browsing and ordering experience across devices, including desktops, tablets, and smartphones.
+Technologies Used
+Angular: Front-end framework for building dynamic and interactive user interfaces.
+Firebase: Backend-as-a-Service platform for user authentication, real-time database, and cloud storage.
+Bootstrap: Front-end framework for responsive and mobile-first design.
+Node.js: JavaScript runtime for server-side scripting and backend development (if applicable).
+Express.js: Web application framework for building APIs and server-side logic (if applicable).
+Getting Started
+Clone the repository to your local machine.
+Install dependencies using npm install.
+Run the development server using ng serve.
+Access the application in your web browser at http://localhost:4200.
+Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Make your changes and commit them with descriptive messages.
+Push your changes to your fork.
+Submit a pull request to the main repository.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
