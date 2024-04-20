@@ -18,7 +18,7 @@ Welcome to the Food Order Portal! This web application provides a convenient pla
 - **Firebase**: Backend-as-a-Service platform for user authentication, real-time database, and cloud storage.
 - **Bootstrap**: Front-end framework for responsive and mobile-first design.
 - **Node.js**: JavaScript runtime for server-side scripting and backend development (if applicable).
-- **Express.js**: Web application framework for building APIs and server-side logic (if applicable).
+- **python (flask)**: Web application framework for building APIs and server-side logic (if applicable).
 
 ## Getting Started
 
