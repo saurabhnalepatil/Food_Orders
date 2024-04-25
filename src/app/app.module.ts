@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbRatingConfig, NgbRatingModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { SearchComponent } from './search/search.component';
+import { HeaderComponent } from './components/header/header.component'; 
+import { HomeComponent } from './components/home/home.component';
+import { SearchComponent } from './components/search/search.component';
 import { FormsModule } from '@angular/forms';
-import { TagsComponent } from './tags/tags.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { FoodpageComponent } from './foodpage/foodpage.component';
+import { TagsComponent } from './components/tags/tags.component'; 
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { FoodpageComponent } from './components/foodpage/foodpage.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FoodpageComponent } from './foodpage/foodpage.component';
     SearchComponent,
     TagsComponent,
     CartPageComponent,
-    FoodpageComponent
+    FoodpageComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

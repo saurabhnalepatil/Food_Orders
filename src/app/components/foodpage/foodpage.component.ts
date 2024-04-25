@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CartService } from '../services/cart.service';
-import { FoodService } from '../services/food/food.service';
-import { Foods } from '../shared/models/food';
+import { CartService } from 'src/app/services/cart.service';
+import { FoodService } from 'src/app/services/food/food.service';
+import { Foods } from 'src/app/shared/models/food';
 
 @Component({
   selector: 'app-foodpage',
@@ -11,9 +11,14 @@ import { Foods } from '../shared/models/food';
 })
 export class FoodpageComponent {
   food!: Foods;
-  constructor(private activateRoute: ActivatedRoute,
-    private foodServices: FoodService, private cartService: CartService,
-    private router:Router) {
+  constructor(
+    private activateRoute: ActivatedRoute,
+    private foodServices: FoodService,
+    private cartService: CartService,
+    private router: Router
+  ) {
+
+
     activateRoute.params.subscribe((params) => {
       if (params['id'])
         this.food = foodServices.getFoodById(params['id'])

@@ -1,4 +1,4 @@
-ul {
+.food-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +7,7 @@ ul {
     padding: 0;
 }
 
-ul li a {
-    height: 20rem;
-    width: 17rem;
+.food-card a {
     border: 1px solid wheat;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -21,7 +19,7 @@ ul li a {
     /* border-right: 2px #ef3d3d; */
 }
 
-li a:hover {
+.food-card a:hover {
     opacity: 0.9;
     cursor: pointer;
 }
@@ -52,7 +50,6 @@ li a:hover {
 }
 
 .origins span {
-
     border-radius: 2rem;
     background-color: whitesmoke;
     color: gray;

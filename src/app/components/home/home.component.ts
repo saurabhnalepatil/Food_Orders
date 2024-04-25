@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FoodService } from '../services/food/food.service';
-import { Foods } from '../shared/models/food';
 import { NgbRatingConfig, NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute } from '@angular/router';
+import { FoodService } from 'src/app/services/food/food.service';
+import { Foods } from 'src/app/shared/models/food';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
