@@ -67,3 +67,61 @@
 .star.not {
     color: black;
 }
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag a {
+    background-color: #f1f1f1;
+    padding: .3rem 1rem;
+    margin: .2rem .15rem;
+    border-radius: 10rem;
+    color: #626262;
+    font-weight: 600;
+}
+
+.tag a:hover {
+    color: black;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    margin-bottom: .5rem;
+
+}
+
+.search input {
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: #f1f1f1;
+    padding: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.search button {
+    color: gray;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 10rem 10rem 0;
+    background-color: #e72929;
+    color: white;
+    opacity: .8;
+    outline: none;
+}
+
+.search button:hover {
+    opacity: 1;
+    cursor: pointer;
+}

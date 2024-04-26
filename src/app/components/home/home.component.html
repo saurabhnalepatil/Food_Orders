@@ -1,11 +1,19 @@
-<app-search></app-search>
-<app-tags></app-tags>
+<div class="search">
+    <input type="text" placeholder="Search Food from TC ☺ Food Corner" [(ngModel)]="searchItem" (change)="search()">
+    <button (click)="search()">Search</button>
+</div>
+<div *ngIf="tags" [style.justifyContent]="justifyContent" class="tag">
+    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">{{tag.name}}({{tag.count}})</a>
+</div>
+<div *ngIf="foodPageTags" class="tag">
+    <a *ngFor="let tagname of foodPageTags" routerLink="/tag/{{tagname}}">{{tagname}}</a>
+</div>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-3 food-card" *ngFor="let food of foods">
             <a routerLink="/food/{{food.id}}">
-                <img src="{{food.imageUrl}}" alt="food images">
+                <img [defaultImage]="'/assets/placeholder.jpg'" [lazyLoad]="food.imageUrl" alt="food images">
                 <div class="content">
                     <div class="name">
                         {{food.name}}
