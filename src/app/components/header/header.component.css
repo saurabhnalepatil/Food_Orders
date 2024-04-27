@@ -1,40 +1,38 @@
-.navbar-item {
-    color: #e72929;
-    padding-inline: 1rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.4));
-}
-
-.logo-img {
-    height: 50px;
-    width: 50px;
-    background-image: cover;
-    border-radius: 50%;
-}
-
-.logo-container {
+.navbar {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: 100%;
 }
 
-.company-name {
-    margin-left: 10px;
-    font-family: 'Playball';
-    font-size: 32px;
-
-}
-
-.sub-title {
-    font-size: 16px;
-    font-family: 'Playball';
-    margin: 40px 0px 0px -44px
-}
-
-.navbar a {
+.nav-heading {
     color: #626262;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
 
+.horizontal-nav {
+    display: flex;
+    place-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: end;
+}
 
+.horizontal-nav li {
+    float: left;
+}
+
+.horizontal-nav li a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
 }
 
 .horizontal-nav li a::before {
@@ -47,7 +45,6 @@
     background-color: #e72929;
     transition: width 0.3s ease, left 0.3s ease;
     transform: translateX(-50%);
-    color: #626262;;
 }
 
 .horizontal-nav li a:hover::before {
@@ -57,5 +54,68 @@
 }
 
 .horizontal-nav li a:hover {
-    color: #e72929;
+    color: #e72929
 }
+
+.hero-section h1 {
+    font-weight: 800;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links.open {
+    display: block;
+}
+
+.nav-links {
+    position: fixed;
+    list-style: none;
+    top: 0;
+    right: -100%;
+    padding: 20px;
+    display: block;
+    height: 100vh;
+    width: 80vw;
+    background: transparent;
+    text-decoration: none;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    border: 1px solid #e72929;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+}
+
+.nav-links a {
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 18px;
+    color: #626262;
+}
+
+.nav-links.open {
+    right: 0;
+}
+
+@media (min-width: 320px) and (max-width:770.98px) {
+    .horizontal-nav {
+        display: none;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
+
+
+@media (min-width: 771px) and (max-width: 1199.98px) {
+    .horizontal-nav {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}

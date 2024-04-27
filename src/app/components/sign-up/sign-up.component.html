@@ -12,7 +12,8 @@
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <button (click)="toggleSignUp()">Sign Up</button>
+                <button>Sign Up</button>
+                <span>Create new account <a (click)="toggleSignIn()">here.</a></span>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -27,7 +28,8 @@
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button (click)="toggleSignIn()">Sign In</button>
+                <button>Sign In</button>
+                <span>Create new account <a (click)="toggleSignUp()">here.</a></span>
             </form>
         </div>
         <div class="overlay-container">

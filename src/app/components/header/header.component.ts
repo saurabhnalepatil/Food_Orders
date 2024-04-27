@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isNavOpen: boolean = false;
+  constructor() { }
+  
+  toggleNav() {
+    this.isNavOpen = !this.isNavOpen;
+  }
+  @HostListener('document:touchstart', ['$event'])
+  closeNavOnClickOutside(event: TouchEvent) {
+    this.closeNav()
+  }
 
+  closeNav() {
+    this.isNavOpen = false;
+  }
 }

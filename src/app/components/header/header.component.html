@@ -1,39 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top px-2 p-0">
-    <div class="container-fluid navbar p-0">
-        <a class="navbar-brand navbar-item nav-logo" href="#" data-aos="zoom-in-down" data-aos-duration="1500"
-            data-aos-once="true">
-            <div class="logo-container">
-                <!-- <img src="assets/photos/logo.jpg" alt="" class="logo-img"> -->
-                <div class="company-name">TC ☺ Food Corner!</div>
+<div class="nav">
+    <div class="navbar">
+        <div class=""><a class="nav-heading">TC ☺ Food Corner!</a></div>
+        <div class="">
+            <div class="nav-toggle" (click)="toggleNav()"><i class="fa-solid fa-bars fa-2xl ms-5"
+                    style="color: #000000;"></i>
             </div>
-        </a>
-
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse ms-auto collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav horizontal-nav ms-auto mb-2 mb-lg-0 me-sm-5 text-center collapsed">
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <ul class="nav-links" [class.open]="isNavOpen">
+                <li (click)="closeNav()" class="text-end"><i class="fa-solid fa-xmark fa-2xl"
+                        style="color: #000000;"></i>
                 </li>
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <a class="nav-link active" aria-current="page" routerLink="services">Service</a>
-                </li>
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <a class="nav-link active" aria-current="page" routerLink="about-us">About Us</a>
-                </li>
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <a class="nav-link" aria-current="page" routerLink="gallery">Gallery</a>
-                </li>
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <a class="nav-link active" aria-current="page" routerLink="contact">Contact Us</a>
-                </li>
-                <li class="navbar-item" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-once="true">
-                    <button class="nav-link active" aria-current="page" routerLink="login">login</button>
-                </li>
+                <li class=""><a href="#home" (click)="closeNav()">ABOUT</a></li>
+                <li class=""><a href="#experience" (click)="closeNav()">EXPERIENCE</a></li>
+                <li class=""><a href="#skills" (click)="closeNav()">SKILLS</a></li>
+                <li class=""><a href="#login" (click)="closeNav()">Login</a></li>
+                <li class=""><a href="#project" (click)="closeNav()">Cart</a></li>
+                <li class=""><a href="#contact" (click)="closeNav()">CONTACT US</a></li>
+            </ul>
+            <ul class="horizontal-nav">
+                <li class=""><a href="#home" class="">ABOUT</a></li>
+                <li class=""><a href="#experience" class="">EXPERIENCE</a></li>
+                <li class=""><a href="#skills" class="">SKILLS</a></li>
+                <li class=""><a href="#education" class="">EDUCATION</a></li>
+                <li class=""><a href="#project" class="">PROJECTS</a></li>
+                <li class=""><a href="#contact" class="">CONTACT US</a></li>
+                <li class=""><a href="#login" class="">Login</a></li>
             </ul>
         </div>
+
     </div>
-</nav>
+</div>

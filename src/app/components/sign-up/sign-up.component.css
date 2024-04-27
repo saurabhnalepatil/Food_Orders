@@ -217,3 +217,32 @@ input {
     height: 40px;
     width: 40px;
 }
+
+@media (min-width: 320px) and (max-width:767.98px) {
+    .container {
+        width: 95vw;
+        margin-top: 50px;
+    }
+
+    .sign-in-container {
+        width: 100%;
+    }
+
+    .sign-up-container {
+        width: 100%;
+        left: -100%;
+    }
+
+    .overlay-container {
+        display: none;
+    }
+
+    .sign-in-container span,
+    .sign-up-container span {
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}
